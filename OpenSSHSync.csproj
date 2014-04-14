@@ -1,30 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.21022</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D7681045-2966-45C3-9462-9C117BDF7CF6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>OpenSSHSync</RootNamespace>
     <AssemblyName>OpenSSHSync</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OutputPath>bin\$(configuration)</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\keepass2-2.23+dfsg\Build\KeePass\Debug\plugins\</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\keepass2-2.23+dfsg\Build\KeePass\Release\plugins\</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -32,7 +30,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="KeePass">
-      <HintPath>..\..\keepass2-2.23+dfsg\Build\KeePass\Debug\KeePass.exe</HintPath>
+      <HintPath>\usr\lib\keepass2\KeePass.exe</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
